@@ -1,1 +1,9 @@
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=yangwenzhe)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ywz978020607&theme=tokyonight&show_icons=true)](https://github.com/anuraghazra/github-readme-stats)
+
+[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ywz978020607)](https://github.com/anuraghazra/github-readme-stats)
+
+
+- 🔭 I’m currently studying at Beihang University(BUAA).
+- 🌱 I’m interested in Web-Of-Things, Deep-Learning.
+- 📫 How to reach me: You can send email to ywzsunny@buaa.edu.cn or concat wechat:[ywz978020607].
+- ⚡ Fun fact: Where there is a will, there is a code.
