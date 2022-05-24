@@ -1,5 +1,5 @@
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ywz978020607&theme=tokyonight&show_icons=true&include_all_commits=true&count_private=true)](https://github.com/anuraghazra/github-readme-stats)
-[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ywz978020607&theme=tokyonight&layout=compact&hide=javascript,css,html&langs_count=6&card_width=280)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=ywz978020607&theme=tokyonight&show_icons=true&include_all_commits=true&count_private=true&line_height=1)](https://github.com/anuraghazra/github-readme-stats)
+&emsp;[![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ywz978020607&theme=tokyonight&layout=compact&hide=javascript,css,html&langs_count=6&card_width=280)](https://github.com/anuraghazra/github-readme-stats)
 
 
 - 🔭 I’m currently studying at Beihang University(BUAA).
