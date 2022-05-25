@@ -4,5 +4,5 @@
 
 - 🔭 I’m currently studying at Beihang University(BUAA).
 - 🌱 I’m interested in Web-Of-Things, Full Stack dev, Deep-Learning in Stereo Image Compression.
-- 📫 How to reach me: You can send email to ywzsunny@buaa.edu.cn or concat wechat:[ywz978020607].
+- 📫 How to reach me: You can send email to ywzsunny@buaa.edu.cn or concat through [bilibili](https://space.bilibili.com/250616280).
 - ⚡ Fun fact: Where there is a will, there is a code.
