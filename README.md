@@ -2,12 +2,12 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=ywz978020607&theme=tokyonight&layout=compact&hide=javascript,css,html&langs_count=6&card_width=280)](https://github.com/anuraghazra/github-readme-stats)
 
 
-🔭2016.09~2020.06 Beihang University (BUAA)
+🔭**2016.09~2020.06 Beihang University (BUAA)**
 - [Web of Things, Full Stack dev, Code of Competitions](https://github.com/ywz978020607/History)
 - [Design of Multi-planes Path Planning](https://github.com/ywz978020607/Multi-planes-path-planning)
 - Outstanding graduate of Beijing 2020.
 
-🌱2020.09~2023.01 Beihang University (BUAA)
+🌱**2020.09~2023.01 Beihang University (BUAA)**
 - [Deep-Learning in Stereo Image Compression](https://github.com/ywz978020607/HESIC)
 - [Mask Homography for Stereo Image Compression](https://github.com/ywz978020607/MASIC)
 - Dev for Lab Construction
@@ -16,14 +16,14 @@
   - [MC2 Lab Refactoring](https://github.com/MC-2-Lab/MC-2)
 
 
-📫2021.11~2022.12 ByteDance (Data-arch)
+📫**2021.11~2022.12 ByteDance (Data-arch)**
 - Recommend Middle Platform Architecture Development
 - Learning Lists
   - [Collections of notes](https://j1gkjgppjx.feishu.cn/wiki/wikcnj8FJWceKDfvLDZnkupYnkb)
   - [Note websites for myself leetcode](https://ywz978020607.github.io/leetcode/#/lcof2/)
 
 
-⚡2020.04~Now Bilibili-摸鱼大鸽
+⚡**2020.04~Now Bilibili-摸鱼大鸽**
 - [bilibili link](https://space.bilibili.com/250616280)
 
 
