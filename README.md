@@ -3,9 +3,9 @@
 
 
 🔭**2016.09~2020.06 Beihang University (BUAA)**
+- Outstanding graduate of Beijing 2020.
 - [Web of Things, Full Stack dev, Code of Competitions](https://github.com/ywz978020607/History)
 - [Design of Multi-planes Path Planning](https://github.com/ywz978020607/Multi-planes-path-planning)
-- Outstanding graduate of Beijing 2020.
 
 🌱**2020.09~2023.01 Beihang University (BUAA)**
 - Outstanding graduate 2023.
