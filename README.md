@@ -8,6 +8,7 @@
 - Outstanding graduate of Beijing 2020.
 
 🌱**2020.09~2023.01 Beihang University (BUAA)**
+- Outstanding graduate 2023.
 - [Deep-Learning in Stereo Image Compression](https://github.com/ywz978020607/HESIC)
 - [Mask Homography for Stereo Image Compression](https://github.com/ywz978020607/MASIC)
 - Dev for Lab Construction
