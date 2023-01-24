@@ -1,4 +1,4 @@
-name: autocheck-ywzmain
+name: update_ali_ddns
 
 on:
   push:
