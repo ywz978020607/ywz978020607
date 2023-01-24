@@ -202,7 +202,7 @@ def aesDecrypt(key, data):
 
 
 
-def main():
+if __name__ == "__main__":
     # from p2pinfo import *
     # key = os.environ["key"]
     ##
@@ -230,6 +230,3 @@ def main():
             update_domain_record(RR, RECORD_ID, UPDATE_TYPE, ADDRESS)
         except Exception as e:
             print("cannot sync {} for {}".format(server, e))
-
-
-main()
