@@ -1,0 +1,26 @@
+name: autocheck-ywzmain
+
+on:
+  push:
+    branches:
+    - main
+
+jobs: 
+  check: 
+    runs-on: ubuntu-latest
+    steps:
+    - name: checkout
+      uses: actions/checkout@v2
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: install requirement
+      run: |
+          python -m pip install --upgrade pip
+          pip install requests aliyun-python-sdk-core-v3 pycryptodome
+    - name: check
+      env: 
+        YOUR_PWD: ${{ secrets.YOUR_PWD }}
+        TOKEN: ${{ secrets.TOKEN }}
+      run: python update_ali_dns.py
