@@ -21,6 +21,6 @@ jobs:
           pip install requests aliyun-python-sdk-core-v3 pycryptodome
     - name: check
       env: 
-        YOUR_PWD: ${{ secrets.YOUR_PWD }}
+        USER: ${{ secrets.USER }}
         TOKEN: ${{ secrets.TOKEN }}
       run: python update_ali_dns.py
