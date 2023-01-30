@@ -14,3 +14,4 @@ with open('myip.json', 'w') as f:
 
 print(data)
 print('done')
+os.system("timeout 5s ping6 ywz3.buaamc2.net")
