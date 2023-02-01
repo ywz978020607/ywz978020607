@@ -1,95 +1,145 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <title>欢迎来到跳转页面</title>
-
-    <link rel="stylesheet" href="css/index.css" id="css" />
+<meta charset="utf-8">
+<title>自动搜索</title>
+<script src="./index_dep/vue.global.js"></script>
+<script src="./index_dep/jquery-3.2.1.js"></script>
+<script language="javascript" src="./index_dep/ping.js"></script>
+<style>
+    #search ul {
+        list-style-type: none;
+        display: block;
+        width: 70px;
+        height: 40px;
+        margin: 0;
+        padding: 0;
+        border: 0px;
+        float: left;
+    }
+    #search li {
+        border: 0px;
+        margin: 0px;
+        padding: 0px;
+    }
+    #search form {
+        margin: 0px;
+        padding: 0px;
+    }
+    #search input {
+        height: 30px;
+        width: 400px;
+        margin: 0px;
+    }
+    #search .button {
+        font-size: 17px;
+        font-weight: 600;
+        color: #002D96;
+        height: 30px;
+        width: 110px;
+        margin-left: 50px;
+        background: #e6efc2;
+        opacity: 0.8;
+        border: #7fb80e 1px solid;
+        cursor: pointer;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+    }
+</style>
 </head>
 
-<body>
-    <div class="load" id="load">
-        <div class="container circle">
-            <div class="box1 circle center"></div>
-            <div class="box2 circle center"></div>
-            <div class="box3 circle center"></div>
-            <div class="box4 circle center"></div>
-            <div class="box5 circle center"></div>
-            <div class="box6 circle">
-                <div class="coil" style="--i: 0"></div>
-                <div class="coil" style="--i: 1"></div>
-                <div class="coil" style="--i: 2"></div>
-                <div class="coil" style="--i: 3"></div>
-                <div class="coil" style="--i: 4"></div>
-                <div class="coil" style="--i: 5"></div>
-                <div class="coil" style="--i: 6"></div>
-                <div class="coil" style="--i: 7"></div>
-            </div>
-        </div>
+<body style="background-attachment: fixed;text-align: center;color:whitesmoke; background-image:url('./index_dep/bg.jpg'); background-repeat:no-repeat; background-size: cover;">
 
-        <div class="center">
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-            <br><br><br><br><br><br><br><br><br><br><br><br>
-            <h2>Loading...</h2>
-        </div>
+    <!-- <h1 >Termux 手机服务器功能入口(自用非传播)</h1>
+    <table align="center" width="50%"><tr>
+    <td><a href="https://ywz3.buaamc2.net:8920/"><img src="./index_dep/1.png" width="300px"   border=0 /></a></td>
+    <td><a href="https://ywz3.buaamc2.net:9010/upload/templates/First.html"><img src="./index_dep/2.png" width="220px"   border=0 /></a></td>
+    </tr><tr>
+    <td><a href="https://ywz3.buaamc2.net:9011/"><img src="./index_dep/6.png" width="300px"   border=0 /></a></td>
+    <td><a href="https://ywz3.buaamc2.net:9010/files/ywz/"><img src="./index_dep/5.png" width="220px"   border=0 /></a></td>
+    </tr></table>  -->
+<br>
 
-    </div>
+<div id="app1">
 
-    <!-- 设置为一开始不显示 -->
-    <div class="ywzbg" id="main" style="display: none; height: 600px;">
-        <div class="ywzbox" align="center">
-            <h1>github网址</h1><a href="https://github.com/ywz978020607/History">全栈式开发记录github跳转链接，欢迎star</a>
-            <br>
-            <div>👆⬆求GitHub互star~⬆👆</div>
-
-            <br>
-            <!-- <h3>自娱自乐小工具</h3>
-            <h3>· 临时自搭网盘</h3>
-            <a href="http://27b2a24926.qicp.vip/upload">上传链接跳转</a>
-            <br><br>
-            <a href="http://27b2a24926.qicp.vip/files/">查看链接跳转</a> -->
-
-            <h3>· 个人博客含教学内容入口</h3>
-            <a href="https://www.cnblogs.com/sharklet/">博客园 sharklet</a>
-            <h3>· bilibili视频集链接含公开课</h3>
-            <a href="https://space.bilibili.com/250616280">B站 摸鱼大鸽[联系请通过b站私信]</a>
-
-            <h3>👇⬇有开发学习需求的客户请点下面~⬇👇</h3>
-            <a href="https://github.com/ywz978020607/History/blob/master/%E4%BB%A3%E5%81%9A%E4%BD%9C%E5%93%81%E5%90%88%E8%BE%91%E5%B1%95%E7%A4%BA/README.md">物联网软硬件相关代做开发说明及联系方式</a>
-            <br>
-        </div>
+<!-- <span v-if="seen">现在你看到我了</span> -->
+<h2>自动切换搜索引擎-谷歌/百度/必应</h2>
+    <div id="search" align="center">
+        <table>
+            <tr>
+                <td>
+                    <select v-model="selected" @change="changeimg()">
+                        <option value="baidu">Baidu</option>
+                        <option value="google">Google</option>
+                        <option value="bing">Bing</option>
+                      </select>
+                </td>
+                <td id="from_box" style="padding-left:10px;">
+                    <input v-model="search_context" type="text"  autocomplete="off" @keyup.enter="this.search()"/>
+                </td>
+                <td>
+                    <p @click="search">点<img :src=imgsrc width="80">我</p>
+                </td>
+            </tr>
+        </table>
     </div>
 
 
-    <!-- 动态修改body-css -->
-    <script>
-        function change() {
-            //   location='vx.html';  
-            var obj = document.getElementById("css");
-            obj.setAttribute("href", "css/index2.css");
+</div>
 
-            //隐藏加载的
-            document.getElementById("load").style.display = "none";
+<script>
+const App1 = {
+  data() {
+    return {
+    //   seen: true
+        selected: "google",
+        search_engines: {
+            "baidu": ["./index_dep/baidu.png", "http://www.baidu.com/s?ie=UTF-8&wd="],
+            "google": ["./index_dep/google.png", "https://www.google.com/search?q="],
+            "bing": ["./index_dep/bing.svg", "https://www.bing.com/search?q="]
+        },
+        imgsrc: "./index_dep/R-C.gif",
+        search_context: "",
+    }
+  },
+  methods: {
+    changeimg:function(e){
+        this.imgsrc = this.search_engines[this.selected][0];
+    },
+    search:function(e){
+        window.location.href = this.search_engines[this.selected][1] + this.search_context;
+    },
 
-            document.getElementById("main").style.display = ""; //显
-            // document.getElementById("main").style.display = "none"; //隐
-        }
-        // setTimeout('change()', 1000);
-
-        document.onreadystatechange = subSomething;
-
-        function subSomething() {
-            //当页面加载状态
-            if (document.readyState == "complete") {
-                //延迟xx ms关闭loading
-                // $('.load').delay(700).hide(0);
-                // $('.load').delay(700).fadeOut('slow'); //不用jquery方式，换用原生方式
-                setTimeout('change()', 700);
+    testsearch:function(e){
+        that = this;
+        temp_selected = that.selected;
+        $.ping({
+            url : 'https://www.' + temp_selected + '.com', 
+            beforePing : function(){},
+            afterPing : function(ping){
+                console.log(temp_selected + ":" + ping);
+                if(ping >= 1600) {
+                    that.selected = "baidu";
+                }
+                that.changeimg();
             }
+        });
+    }
 
-        }
-    </script>
+  },
+  mounted() {
+    this.testsearch();
+    // this.changeimg();
+  }
+}
+
+Vue.createApp(App1).mount('#app1')
+</script>
+
+
 </body>
+<br><br><br>
+<p><a href="https://space.bilibili.com/250616280?spm_id_from=333.999.0.0">Contact [摸鱼大鸽] on Bilibili.com</a> <br>
+    </p>
 
 </html>
