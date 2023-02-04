@@ -7,7 +7,7 @@ ipv6_addr = info.split('wlan0')[-1].split('scope global temporary dynamic')[0].s
 
 data = {}
 data['ywz3'] = ipv6_addr
-#data['ywz3in'] = ipv4_inner_addr
+data['ywz3in'] = ipv4_inner_addr
 
 with open('myip.json', 'w') as f:
     json.dump(data, f)
