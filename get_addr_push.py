@@ -2,7 +2,7 @@
 import os, json, sys
 
 info = os.popen('ip addr').read()
-ipv6_addr = info.split('inet ')[-1].split('inet6')[1].split('scope global')[0].split('/')[0].strip()
+ipv6_addr = '24' + info.split('inet6 24')[1].split('scope global')[0].split('/')[0].strip()
 #ipv4_inner_addr = info.split('scope global wlan0')[0].split('inet')[-1].split('/')[0].strip()
 
 data = {}
