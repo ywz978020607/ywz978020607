@@ -13,7 +13,7 @@ data[prefix] = ipv6_addr
 #data['ywz3in'] = ipv4_inner_addr
 
 with open('myip.json', 'w') as f:
-    json.dump(data, f)
+    json.dump(data, f, indent = 2)
 
 print(data)
 print('done')
