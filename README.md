@@ -17,7 +17,7 @@
   - [MC2 Lab Refactoring](https://github.com/MC-2-Lab/MC-2)
 
 
-📫**2021.11~2022.12 ByteDance (Data-arch)**
+📫**2021.11~2023.01 ByteDance (Data-arch)**
 - Recommend Middle Platform Architecture Development
 - Learning Lists
   - [Collections of notes](https://j1gkjgppjx.feishu.cn/wiki/wikcnj8FJWceKDfvLDZnkupYnkb)
