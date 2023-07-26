@@ -6,5 +6,5 @@ cd /root/server_dockers/frpc
 cd /root/server_dockers/nextcloud
 docker-compose up -d
 cd /root/server_dockers/
-bash wangxin.sh
+#bash wangxin.sh
 # emby, syncthing are services
