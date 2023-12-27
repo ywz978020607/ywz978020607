@@ -27,6 +27,6 @@
   - [Collections of notes](https://j1gkjgppjx.feishu.cn/wiki/wikcnj8FJWceKDfvLDZnkupYnkb)
   - [Note websites for myself leetcode](https://ywz978020607.github.io/leetcode/#/lcof2/)
 
-📫**2023.07~Now ABC**
+📫**2023.07~Now ABC: AML**
 
 <!--🏠[Repo Home Page](https://ywz978020607.github.io/)-->
